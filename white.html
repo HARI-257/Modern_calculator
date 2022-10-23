@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Design White Mode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="sound"><i class="fa-solid fa-microphone-lines"></i></div>
+            <div class="num">
+                <input type="text" placeholder="0" id="input">
+                <p style="color: #757884; font-size:40px; text-align: end;"id="result"></p> 
+            </div>
+            <div class="buttons">
+                <button class="grey"onclick="Clear()">C</button>
+                <button class="grey" onclick="Delete()">Dlt</button>
+                <button class="grey"onclick="Display('%')">%</button>
+                <button class="orange"onclick="Display('/')">/</button>
+                <button onclick="Display('7')">7</button>
+                <button onclick="Display('8')">8</button>
+                <button onclick="Display('9')">9</button>
+                <button class="orange" onclick="Display('*')">*</button>
+                <button onclick="Display('4')">4</button>
+                <button onclick="Display('5')">5</button>
+                <button onclick="Display('6')">6</button>
+                <button class="orange" onclick="Display('-')">-</button>
+                <button onclick="Display('1')">1</button>
+                <button onclick="Display('2')">2</button>
+                <button onclick="Display('3')">3</button>
+                <button class="orange" onclick="Display('+')">+</button>
+                <button class="zero" onclick="Display('0')">0</button>
+                <button onclick="Display('.')">.</button>
+                <button class="orange" onclick="Play()">=</button>
+            </div>
+        </div>
+    </div>
+    <button class="dark"><a href="index.html">Dark Mode</a></button>
+    <script src="script.js"></script>
+</body>
+</html>
